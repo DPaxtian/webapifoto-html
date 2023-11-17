@@ -42,7 +42,7 @@ async function uploadFile(blob){
     let file = null;
     let fileName = `azure${Date.now()}.jpg`;
     const urlAzure = "https://danielpaxtianwebapifoto.azurewebsites.net";
-    const urlFotoAzure = urlAzure + "/api/foto"
+    const urlFotoAzure = urlAzure + "/api/foto/"
 
     file = new File([blob], fileName, {type: 'image/jpeg'});
 
